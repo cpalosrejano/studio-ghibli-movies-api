@@ -1,0 +1,2 @@
+msgid "Nausicaä del Valle del Viento"
+msgstr "Nausicaä of the Valley of the Wind"
