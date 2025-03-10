@@ -86,9 +86,15 @@ def get_all_movies(lang: str, include_coproductions: bool) -> List[Movie]:
     # load translator in the desired language
     # _ = get_translator(lang).gettext
 
+    lang_path = "translations/" + lang + "/LC_MESSAGES/messages.mo"
+    lang_path_exist = False
+    if os.path.exists(lang_path):
+        lang_path_exist = True
+
     movies = [
         Movie(
-            id="47d71eb5-a93f-43fe-b51d-6563cd0bd8b4",
+            id="" + lang_path + " exist: " + lang_path_exist,
+            #id="47d71eb5-a93f-43fe-b51d-6563cd0bd8b4",
             title="Nausicaä of the Valley of the Wind",
             description="Far in the future, after an apocalyptic conflict has devastated much of the world's ecosystem, the few surviving humans live in scattered semi-hospitable environments within what has become a \"toxic jungle.\" Young Nausicaä lives in the arid Valley of the Wind and can communicate with the massive insects that populate the dangerous jungle. Under the guidance of the pensive veteran warrior, Lord Yupa, Nausicaä works to bring peace back to the ravaged planet.",
             title_romanised="Kaze no Tani no Naushikaaka",
