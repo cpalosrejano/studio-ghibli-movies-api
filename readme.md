@@ -40,7 +40,7 @@ The API is built using Python and FastAPI
 ### How to run in local
 Execute the following command to run the API in your computer
 
-``uvicorn main:app --reload``
+``uvicorn app.main:app --reload``
 
 The API will be available in
 
