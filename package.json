@@ -1,5 +1,0 @@
-{
-    "scripts": {
-        "build": "pybabel compile -f -d translations && vercel-build"
-    }
-}
