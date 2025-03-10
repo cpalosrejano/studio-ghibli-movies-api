@@ -10,7 +10,7 @@
             "src": "/(.*)",
             "dest": "main.py"
         }
-    ]
+    ],
     "hooks": {
         "build": "pybabel compile -f -d translations"
     }
