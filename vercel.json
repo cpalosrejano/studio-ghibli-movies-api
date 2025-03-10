@@ -12,6 +12,6 @@
         }
     ],
     {
-      "installCommand": "pybabel compile -f -d translations"
+      "devCommand": "pybabel compile -f -d translations"
     }
 }
