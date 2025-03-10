@@ -5,11 +5,7 @@
             "use": "@vercel/python"
         },
         {
-            "src": "translations/en/movies.py",
-            "use": "@vercel/python"
-        },
-        {
-            "src": "translations/es/movies.py",
+            "src": "translations/movies/*.py",
             "use": "@vercel/python"
         }
     ],

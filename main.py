@@ -1,14 +1,12 @@
+import importlib
+
 from fastapi import FastAPI, Query
 from datetime import datetime
 from fastapi.responses import HTMLResponse
 
-# for get_all_movies and Movie class
 from pydantic import BaseModel
 from typing import List
 
-# translations
-import gettext
-import os
 
 ############################################################
 ## start of api
@@ -81,15 +79,9 @@ class Movie(BaseModel):
     rt_score: int
     coproduction: bool
 
-
 def get_all_movies(lang: str, include_coproductions: bool) -> List[Movie]:
 
-    # load translator in the desired language
-    # translator = get_movies_translation_for_(lang) : Map<Movie.id, MovieTranslation>
-
-    #translator = get_translator(lang)
-    #translator.get(47d71eb5-a93f-43fe-b51d-6563cd0bd8b4).title
-
+    # load movies
     movies = [
         Movie(
             id="47d71eb5-a93f-43fe-b51d-6563cd0bd8b4",
@@ -452,7 +444,6 @@ def get_all_movies(lang: str, include_coproductions: bool) -> List[Movie]:
             coproduction = False
         )
     ]
-
     if include_coproductions:
         movies.append(
             Movie(
@@ -472,6 +463,18 @@ def get_all_movies(lang: str, include_coproductions: bool) -> List[Movie]:
             )
         )
 
+    # load translator for custom lang
+    translations = get_movie_translations_for(lang)
+    for movie in movies:
+
+        # check if the movie has translation
+        if movie.title in translations:
+            translation = translations[movie.title]
+
+            # update title and description
+            movie.title = translation.title
+            movie.description = translation.description
+
     return movies
 
 ############################################################
@@ -485,12 +488,11 @@ def get_all_movies(lang: str, include_coproductions: bool) -> List[Movie]:
 ############################################################
 
 # function to fetch the translator
-def get_translator(lang: str):
-    lang_path = "translations/" + lang + "/LC_MESSAGES/messages.mo"
-
-    if os.path.exists(lang_path):  # if lang exist in translations folders, use it
-        return gettext.translation("messages", localedir="translations", languages=[lang])
-
-    # if lang does not exist in translations folder, use en by default
-    return gettext.translation("messages", localedir="translations", languages=["en"])
+def get_movie_translations_for(lang: str):
+    try:
+        translation_module = importlib.import_module("translations.movies." + lang)
+        return translation_module.translations
+    except ModuleNotFoundError:
+        # if lang is not defined, return an empty dic
+        return {}
 
