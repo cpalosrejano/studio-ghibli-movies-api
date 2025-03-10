@@ -1,7 +1,5 @@
 from fastapi import FastAPI, Query
-from datetime import datetime
 from fastapi.responses import HTMLResponse
-
 from app.data.movie.repository import get as get_movies_from_repository
 from app.translations.translator import translate_movies
 
@@ -35,10 +33,6 @@ def root():
         </body>
     </html>
     """
-
-@app.get("/ping")
-def ping():
-    return {"ping": datetime.now().isoformat()}
 
 @app.get("/movies")
 def get_movies(
