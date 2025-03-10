@@ -10,8 +10,5 @@
             "src": "/(.*)",
             "dest": "main.py"
         }
-    ],
-    {
-      "devCommand": "pybabel compile -f -d translations"
-    }
+    ]
 }
