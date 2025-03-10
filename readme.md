@@ -27,11 +27,10 @@ The API is built using Python and FastAPI
 - Install python
 - Install fastapi
 - Install uvicorn
-- Install babel
 
 ---
 
-### How to add a new language
+### How to add a new translation
 - Create a folders structure inside of translation (for example ``fr/LC_MESSAGES``)
 - Create or copy a ``messages.po`` file and translate the ``msgstr`` chain
 - To build the translations, just run the following command: ``pybabel compile -f -d translations``
