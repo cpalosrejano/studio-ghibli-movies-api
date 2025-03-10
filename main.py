@@ -84,7 +84,7 @@ class Movie(BaseModel):
 def get_all_movies(lang: str, include_coproductions: bool) -> List[Movie]:
 
     # load translator in the desired language
-    _ = get_translator(lang).gettext
+    # _ = get_translator(lang).gettext
 
     movies = [
         Movie(
