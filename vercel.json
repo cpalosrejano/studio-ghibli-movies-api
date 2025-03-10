@@ -5,7 +5,7 @@
             "use": "@vercel/python"
         }
     ],
-    "buildCommand": "bash build.sh",
+    "buildCommand": "pybabel compile -f -d translations",
     "routes": [
         {
             "src": "/(.*)",
