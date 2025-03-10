@@ -2,11 +2,10 @@
     "builds": [
         {
             "src": "main.py",
-            "use": "@vercel/python",
-            "config": { "maxLambdaSize": "15mb" }
+            "use": "@vercel/python"
         }
     ],
-    "buildCommand": "pybabel compile -f -d translations",
+    "buildCommand": "bash build.sh",
     "routes": [
         {
             "src": "/(.*)",
