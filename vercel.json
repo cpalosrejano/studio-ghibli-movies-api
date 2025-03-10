@@ -5,7 +5,6 @@
             "use": "@vercel/python"
         }
     ],
-    "includeFiles": ["translations/**/*"],
     "buildCommand": "pybabel compile -f -d translations",
     "routes": [
         {
