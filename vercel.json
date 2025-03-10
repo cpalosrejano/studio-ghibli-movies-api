@@ -3,6 +3,14 @@
         {
             "src": "main.py",
             "use": "@vercel/python"
+        },
+        {
+            "src": "translations/en/movies.py",
+            "use": "@vercel/python"
+        },
+        {
+            "src": "translations/es/movies.py",
+            "use": "@vercel/python"
         }
     ],
     "routes": [

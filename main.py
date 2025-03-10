@@ -81,9 +81,6 @@ class Movie(BaseModel):
     rt_score: int
     coproduction: bool
 
-class MovieTranslation(BaseModel):
-    title: str
-    description: str
 
 def get_all_movies(lang: str, include_coproductions: bool) -> List[Movie]:
 
