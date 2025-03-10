@@ -88,8 +88,8 @@ def get_all_movies(lang: str, include_coproductions: bool) -> List[Movie]:
 
     lang_path = "translations/" + lang + "/LC_MESSAGES/messages.mo"
     lang_path_exist = False
-    if os.path.exists(lang_path):
-        lang_path_exist = True
+    #if os.path.exists(lang_path):
+    #    lang_path_exist = True
 
     movies = [
         Movie(
