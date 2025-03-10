@@ -81,20 +81,21 @@ class Movie(BaseModel):
     rt_score: int
     coproduction: bool
 
+class MovieTranslation(BaseModel):
+    title: str
+    description: str
+
 def get_all_movies(lang: str, include_coproductions: bool) -> List[Movie]:
 
     # load translator in the desired language
-    # _ = get_translator(lang).gettext
+    # translator = get_movies_translation_for_(lang) : Map<Movie.id, MovieTranslation>
 
-    lang_path = "translations/" + lang + "/LC_MESSAGES/messages.mo"
-    lang_path_exist = False
-    if os.path.exists(lang_path):
-        lang_path_exist = True
+    #translator = get_translator(lang)
+    #translator.get(47d71eb5-a93f-43fe-b51d-6563cd0bd8b4).title
 
     movies = [
         Movie(
-            id="" + lang_path + " exist: " + str(lang_path_exist),
-            #id="47d71eb5-a93f-43fe-b51d-6563cd0bd8b4",
+            id="47d71eb5-a93f-43fe-b51d-6563cd0bd8b4",
             title="Nausicaä of the Valley of the Wind",
             description="Far in the future, after an apocalyptic conflict has devastated much of the world's ecosystem, the few surviving humans live in scattered semi-hospitable environments within what has become a \"toxic jungle.\" Young Nausicaä lives in the arid Valley of the Wind and can communicate with the massive insects that populate the dangerous jungle. Under the guidance of the pensive veteran warrior, Lord Yupa, Nausicaä works to bring peace back to the ravaged planet.",
             title_romanised="Kaze no Tani no Naushikaaka",
