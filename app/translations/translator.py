@@ -12,8 +12,8 @@ def translate_movies(movies: List[Movie], lang: str) :
         if movie.title in translations:
             translation = translations[movie.title]
             # update title and description
-            movie.title = translation.title
-            movie.description = translation.description
+            movie.title = translation.title or movie.title
+            movie.description = translation.description or movie.description
 
     return movies
 

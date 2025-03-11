@@ -1,5 +1,6 @@
 from app.translations.schema import MovieTranslation
 
+# spanish
 translations = {
      "Nausicaä of the Valley of the Wind" : MovieTranslation(
           title = "Nausicaä del Valle del Viento",
@@ -63,7 +64,7 @@ translations = {
      ),
      "Tales from Earthsea" : MovieTranslation(
           title = "Cuentos de Terramar",
-          description = "Película de anime del Studio Ghibli dirigida por Goro Miyazaki, hijo de Hayao Miyazaki. Está basada en el tercer libro de la serie \"Terramar: La costa más lejana\", escrita por Ursula K. Le Guin. Una adaptación en manga se ha publicado en Japón. La historia nos sitúa en el archipiélago de Terramar, donde hay dragones, magos y espectros, talismanes y poderes. Es un mundo gobernado por la magia y, ante todo, por las palabras, pues cada cosa posee su nombre verdadero, el designado durante la Creación, que otorga a los hechiceros el dominio sobre los elementos y los animales. Sus gentes, sencillas y tranquilas, tienen como único objetivo conseguir paz y sabiduría..."
+          description = "Película dirigida por Goro Miyazaki, hijo de Hayao Miyazaki. Está basada en el tercer libro de la serie \"Terramar: La costa más lejana\", escrita por Ursula K. Le Guin. Una adaptación en manga se ha publicado en Japón. La historia nos sitúa en el archipiélago de Terramar, donde hay dragones, magos y espectros, talismanes y poderes. Es un mundo gobernado por la magia y, ante todo, por las palabras, pues cada cosa posee su nombre verdadero, el designado durante la Creación, que otorga a los hechiceros el dominio sobre los elementos y los animales. Sus gentes, sencillas y tranquilas, tienen como único objetivo conseguir paz y sabiduría..."
      ),
      "Ponyo": MovieTranslation(
           title = "Ponyo en el acantilado",
