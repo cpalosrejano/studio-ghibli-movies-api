@@ -8,7 +8,15 @@ from app.translations.translator import translate_movies
 ############################################################
 
 
-app = FastAPI()
+app = FastAPI(
+    title="Studio Ghibli Movies API",
+    description="API which provices a basic but detailed information about all movies from Studio Ghibli",
+    version="1.0.0",
+    contact={
+        "name": "Cristian",
+        "email": "cpalosrejano@gmail.com",
+    }
+)
 
 # Endpoint to check the abailability of API
 @app.get("/", response_class=HTMLResponse, include_in_schema=False)
@@ -34,7 +42,9 @@ def root():
     </html>
     """
 
-@app.get("/movies")
+@app.get("/movies",
+         summary="Get movies",
+         description="This endpoint return a complete list of Studio Ghibli movies")
 def get_movies(
         lang: str = Query("en", description="Language in which the API will return data"),
         coproductions: bool = Query(False, description="Includes films that have been co-produced by by Studio Ghibli")):
