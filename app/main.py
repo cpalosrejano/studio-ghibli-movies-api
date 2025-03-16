@@ -46,11 +46,15 @@ def root():
          summary="Get movies",
          description="This endpoint return a complete list of Studio Ghibli movies")
 def get_movies(
-        lang: str = Query("en", description="Language in which the API will return data"),
+        locale: str = Query("en", description="Language in which the API will return data. Format en-UK"),
         coproductions: bool = Query(False, description="Includes films that have been co-produced by by Studio Ghibli")):
 
     # get movies (with or without coproductions)
     movies = get_movies_from_repository(coproductions)
+
+    # for now we get only the laguage, not the variant
+    locale = locale.strip().lower()
+    lang = locale.split("-")[0] if "-" in locale else locale
 
     # translate movies to custom lang
     movies_translated = translate_movies(movies, lang)
