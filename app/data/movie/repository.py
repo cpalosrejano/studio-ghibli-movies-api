@@ -24,7 +24,8 @@ def get_all_movies() -> List[Movie]:
             release_date=1984,
             running_time=116,
             rt_score=91,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 81
         ),
         Movie(
             id="6baffca4-7881-413f-9d8a-a9137de942bb",
@@ -39,7 +40,8 @@ def get_all_movies() -> List[Movie]:
             release_date=1986,
             running_time=124,
             rt_score=96,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 10515
         ),
         Movie(
             id="55d79b98-58a7-4438-9d25-e99e8e088a4e",
@@ -54,7 +56,8 @@ def get_all_movies() -> List[Movie]:
             release_date=1988,
             running_time=93,
             rt_score=100,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 12477
         ),
         Movie(
             id="12710c0b-b598-400b-a4b9-dba03c8c1dc7",
@@ -69,7 +72,8 @@ def get_all_movies() -> List[Movie]:
             release_date=1988,
             running_time=86,
             rt_score=94,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 8392
         ),
         Movie(
             id="7dc4c683-7c34-4243-b940-77d411db3aa2",
@@ -84,7 +88,8 @@ def get_all_movies() -> List[Movie]:
             release_date=1989,
             running_time=101,
             rt_score=98,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 16859
         ),
         Movie(
             id="b79c22e7-a35e-44f8-a01d-786928ac9761",
@@ -99,7 +104,8 @@ def get_all_movies() -> List[Movie]:
             release_date=1991,
             running_time=118,
             rt_score=100,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 15080
         ),
         Movie(
             id="ea4c45df-bd15-4ef0-83f9-f6f9dca675cb",
@@ -114,7 +120,8 @@ def get_all_movies() -> List[Movie]:
             release_date=1992,
             running_time=94,
             rt_score=96,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 11621
         ),
         Movie(
             id="1fe5ba48-40ad-4059-ba8f-37ee9ff4d8c4",
@@ -129,7 +136,8 @@ def get_all_movies() -> List[Movie]:
             release_date=1993,
             running_time=72,
             rt_score=89,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 21057
         ),
         Movie(
             id="caca9a5a-6e05-47df-9ef0-de57508ecea9",
@@ -144,7 +152,8 @@ def get_all_movies() -> List[Movie]:
             release_date=1994,
             running_time=119,
             rt_score=86,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 15283
         ),
         Movie(
             id="07b21060-7236-4939-a414-d9c3b868eefe",
@@ -159,7 +168,8 @@ def get_all_movies() -> List[Movie]:
             release_date=1995,
             running_time=111,
             rt_score=95,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 37797
         ),
         Movie(
             id="329b6ac9-b6cc-426d-bf20-4deff5be1f5f",
@@ -174,7 +184,8 @@ def get_all_movies() -> List[Movie]:
             release_date=1997,
             running_time=133,
             rt_score=93,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 128
         ),
         Movie(
             id="953623e1-82ca-4077-965d-61a2fdfef4e2",
@@ -189,7 +200,8 @@ def get_all_movies() -> List[Movie]:
             release_date=1999,
             running_time=104,
             rt_score=78,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 16198
         ),
         Movie(
             id="2f2613ef-b2a0-45f0-8c33-86df05f23c32",
@@ -204,7 +216,8 @@ def get_all_movies() -> List[Movie]:
             release_date=2001,
             running_time=124,
             rt_score=96,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 129
         ),
         Movie(
             id="bb8a5c3d-0db2-47bc-89c7-2331d803d067",
@@ -219,7 +232,8 @@ def get_all_movies() -> List[Movie]:
             release_date=2002,
             running_time=75,
             rt_score=88,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 15370
         ),
         Movie(
             id="04fc5ab9-2cf0-4aad-b56c-a4d9423556af",
@@ -234,7 +248,8 @@ def get_all_movies() -> List[Movie]:
             release_date=2004,
             running_time=109,
             rt_score=95,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 4935
         ),
         Movie(
             id="cee3bde0-3635-4ecf-9731-9655737795f7",
@@ -249,7 +264,8 @@ def get_all_movies() -> List[Movie]:
             release_date=2006,
             running_time=115,
             rt_score=46,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 37933
         ),
         Movie(
             id="451a4db6-8d9a-4499-b59f-60dc62d0bd27",
@@ -264,7 +280,8 @@ def get_all_movies() -> List[Movie]:
             release_date=2008,
             running_time=100,
             rt_score=91,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 12429
         ),
         Movie(
             id="e98c0fc1-1ccc-47d6-8e92-4a753f7f9253",
@@ -279,7 +296,8 @@ def get_all_movies() -> List[Movie]:
             release_date=2010,
             running_time=94,
             rt_score=94,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 51739
         ),
         Movie(
             id="ef81985e-2b04-4e1b-8197-4c4c92b663e4",
@@ -294,7 +312,8 @@ def get_all_movies() -> List[Movie]:
             release_date=2011,
             running_time=91,
             rt_score=87,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 83389
         ),
         Movie(
             id="c45c90c9-38dc-435d-82a6-e6c06d03af26",
@@ -309,7 +328,8 @@ def get_all_movies() -> List[Movie]:
             release_date=2013,
             running_time=125,
             rt_score=88,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 149870
         ),
         Movie(
             id="17be5479-9ec8-4e06-a313-d7d4b90d7eec",
@@ -324,7 +344,8 @@ def get_all_movies() -> List[Movie]:
             release_date=2013,
             running_time=137,
             rt_score=100,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 149871
         ),
         Movie(
             id="edc0e537-aac8-42ec-8cc4-75e45551aa8e",
@@ -339,7 +360,8 @@ def get_all_movies() -> List[Movie]:
             release_date=2014,
             running_time=103,
             rt_score=92,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 242828
         ),
         Movie(
             id="f16707a1-36de-4697-b751-eefd8200bf87",
@@ -354,7 +376,8 @@ def get_all_movies() -> List[Movie]:
             release_date=2020,
             running_time=82,
             rt_score=28,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 683127
         ),
         Movie(
             id="9144fb4f-83d2-4802-be7f-7f75d97cafc8",
@@ -369,7 +392,8 @@ def get_all_movies() -> List[Movie]:
             release_date=2023,
             running_time=124,
             rt_score=96,
-            coproduction = False
+            coproduction = False,
+            tmdb_id = 508883
         ),
         Movie(
             id="8dcfe58e-1e58-4f68-9679-d10248fa13aa",
@@ -384,6 +408,7 @@ def get_all_movies() -> List[Movie]:
             release_date=2016,
             running_time=80,
             rt_score=93,
-            coproduction = True
+            coproduction = True,
+            tmdb_id = 337703
         )
     ]
