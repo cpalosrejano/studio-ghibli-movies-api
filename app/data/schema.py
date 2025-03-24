@@ -15,3 +15,4 @@ class Movie(BaseModel):
     running_time: int
     rt_score: int
     coproduction: bool
+    tmdb_id: int
