@@ -1,6 +1,6 @@
 from app.translations.schema import MovieTranslation
 
-# Hindi
+# hindi
 translations = {
     "Nausicaä of the Valley of the Wind" : MovieTranslation(
          title = "राजकुमारी नौसिका की जंग",

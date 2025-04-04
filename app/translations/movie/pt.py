@@ -1,6 +1,6 @@
 from app.translations.schema import MovieTranslation
 
-# Brazil, Portugal
+# portuguese
 translations = {
     "Nausicaä of the Valley of the Wind" : MovieTranslation(
         title = "Nausicaä do Vale do Vento",
