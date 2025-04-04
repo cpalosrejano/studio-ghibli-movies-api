@@ -1,6 +1,6 @@
 from app.translations.schema import MovieTranslation
 
-# Philippines
+# tagalo (philippines)
 translations = {
     "Nausicaä of the Valley of the Wind" : MovieTranslation(
         description = "Sa malayong hinaharap, isang libong taon pagkatapos ng isang apocalyptic na digmaan, ang Earth ay lumilitaw na natatakpan ng mga kagubatan na sinalanta ng mga makamandag na kabute at naglalakihang mga insekto. Ang mga lalaki ay nawasak; Ang mga nakaligtas ay nakatira sa ilang nakabukod na mga nayon at halos hindi nabubuhay malapit sa isang kagubatan na kontaminado ng mga nakakalason na gas at higanteng mutant na mga insekto, na sumasakop sa halos lahat ng bahagi ng Earth. Ang Nausicaä ay ang prinsesa ng Valley of the Wind, isang maliit na kaharian na napapalibutan ng mas makapangyarihan at masasamang kaharian. Siya ay isang mandirigma na marunong mag-pilot ng mga barko, ngunit siya rin ay mahabagin, kaya tumanggi siyang makita ang mga insekto bilang mga kaaway, lalo na ang Ohms, dambuhalang at nakakatakot na mga arthropod kung saan nakakaramdam siya ng kakaibang simpatiya. Ang krisis ay sumabog nang ang kalapit na kaharian ng Tolmekia, na pinamumunuan ni Prinsesa Kushana, ay sumalakay sa Valley of the Wind."

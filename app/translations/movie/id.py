@@ -1,6 +1,6 @@
 from app.translations.schema import MovieTranslation
 
-# Indonesian
+# indonesian
 translations = {
     "Nausicaä of the Valley of the Wind" : MovieTranslation(
         description = " Putri Nausicaä berjuang mati-matian untuk mencegah dua negara yang bertikai saling menghancurkan dan menghancurkan planetnya yang sekarat."
