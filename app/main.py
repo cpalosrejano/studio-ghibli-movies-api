@@ -13,7 +13,7 @@ app = FastAPI(
     description="API which provices a basic but detailed information about all movies from Studio Ghibli",
     version="1.0.0",
     contact={
-        "name": "Cristian",
+        "name": "Cristian Palos Rejano",
         "email": "cpalosrejano@gmail.com",
     }
 )
